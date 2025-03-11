@@ -1,6 +1,6 @@
 # APIConsumer project for SureLock Technical Assessment
 The project is developed using skills of C#, .Net, MVC, and JavaScript. It has the functions to show the list of products, add new product, display product details, update product, and soft delete product. 
-It contains API consumers for all of these functions using C#, async task, and dependency injection except the soft delete (The requirement is to use given API Delete method to soft delete, but C#'s HTTPPClient's Delete doesn't allow such flexibility). Additionally, it also contains 2 functions in JavaScript to consume your API Delete method and Patch method. 
+It contains API consumers for all of these functions using C#, async task, and dependency injection except the soft delete (The requirement is to use given API Delete method to soft delete, but C#'s HTTPClient's Delete doesn't allow such flexibility). Additionally, it also contains 2 functions in JavaScript to consume your API Delete method and Patch method. 
 ## Project starting file and Routing
 The starting file is Program.cs. The rouitng information is at the bottom of it. The configuration file is appsettings.json that contains your API config info
 ## Home page
