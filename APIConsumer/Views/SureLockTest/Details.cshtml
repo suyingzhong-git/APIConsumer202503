@@ -1,0 +1,66 @@
+﻿@model APIConsumer.Models.Lock
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Lock</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.id)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="id" class="form-control" disabled />
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="name" class="form-control" disabled />
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="price" class="form-control" disabled />
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.image_urls)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="image_urls" class="form-control" disabled />
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.quantity)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="quantity" class="form-control" disabled />
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.is_active)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="id" class="form-check-input" disabled />
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.created_at)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="created_at" class="form-control" disabled />
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.updated_at)
+        </dt>
+        <dd class = "col-sm-6">
+            <input asp-for="updated_at" class="form-control" disabled />
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new {id = Model.id }) |
+    <a asp-action="Index">Back to List</a>
+</div>
