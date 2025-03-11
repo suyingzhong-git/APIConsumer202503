@@ -7,15 +7,10 @@
     <UserSecretsId>aspnet-APIConsumer-23caf8ba-2bb2-44c7-a5ad-a3fc2cb76ab8</UserSecretsId>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Views\Rainfall\**" />
-    <Content Remove="Views\Rainfall\**" />
-    <EmbeddedResource Remove="Views\Rainfall\**" />
-    <None Remove="Views\Rainfall\**" />
-  </ItemGroup>
+  
 
   <ItemGroup>
-    <Content Remove="wwwroot\js\SureLockScript.js" />
+    <Content Remove="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
