@@ -21,7 +21,6 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 //for Http Client Factory. Transient service. 
-builder.Services.AddHttpClient<IHttpClientExternalAPIRainfallService, HttpClientExternalAPIRainfallService>();
 builder.Services.AddHttpClient<IHttpClientForExternalAPILocksService, HttpClientForExternalAPILocksService>();
 //Set 5 min as the lifetime for the HttpMessageHandler objects in the pool used for the Catalog Typed Client
 //.SetHandlerLifetime(TimeSpan.FromMinutes(5));

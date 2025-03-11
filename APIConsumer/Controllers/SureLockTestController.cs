@@ -11,10 +11,10 @@ namespace APIConsumer.Controllers
         //local variables for dependency injection
         private IConfiguration _configuration;
         private IHttpClientForExternalAPILocksService _locksAPIService;
-        private ILogger<RainfallController> _logger;
+        private ILogger<SureLockTestController> _logger;
         
         //constructor with dependency injection
-        public SureLockTestController(IConfiguration config, IHttpClientForExternalAPILocksService locksAPIService, ILogger<RainfallController> logger)
+        public SureLockTestController(IConfiguration config, IHttpClientForExternalAPILocksService locksAPIService, ILogger<SureLockTestController> logger)
         {
             _configuration = config;
             _locksAPIService = locksAPIService;

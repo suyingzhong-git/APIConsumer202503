@@ -15,12 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\RainfallController.cs" />
-    <Compile Remove="Models\Rainfall.cs" />
-    <Compile Remove="ViewModels\RainfallViewModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Remove="wwwroot\js\SureLockScript.js" />
   </ItemGroup>
 
