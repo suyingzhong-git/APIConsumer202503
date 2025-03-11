@@ -8,6 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Rainfall\**" />
+    <Content Remove="Views\Rainfall\**" />
+    <EmbeddedResource Remove="Views\Rainfall\**" />
+    <None Remove="Views\Rainfall\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\RainfallController.cs" />
+    <Compile Remove="Models\Rainfall.cs" />
+    <Compile Remove="ViewModels\RainfallViewModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\js\SureLockScript.js" />
   </ItemGroup>
 
@@ -32,6 +45,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.12" />
     <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.1-dev-00077" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
 </Project>
