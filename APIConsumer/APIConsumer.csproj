@@ -7,12 +7,6 @@
     <UserSecretsId>aspnet-APIConsumer-23caf8ba-2bb2-44c7-a5ad-a3fc2cb76ab8</UserSecretsId>
   </PropertyGroup>
 
-  
-
-  <ItemGroup>
-    <Content Remove="Views\Shared\_LoginPartial.cshtml" />
-  </ItemGroup>
-
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\js\SureLockScript.js" />
   </ItemGroup>
